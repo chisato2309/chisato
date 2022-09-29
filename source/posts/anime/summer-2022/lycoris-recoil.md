@@ -29,6 +29,7 @@ tags:
     - Fugitive
     - Heterosexual
 cover: https://s4.anilist.co/file/anilistcdn/media/anime/banner/143270-Ivjs2nVpARtS.jpg
+permalink: /anime/summer/2022/lycoris-recoil/index.html
 ---
 
 “LycoReco” is a café with a traditional Japanese twist located in downtown Tokyo. But the delicious coffee and sugary sweets are not the only orders this café takes! From delivering packages short distances, to pick-ups and drop-offs on the lonely streets at night, to zombies and giant monster extermination…?! Whatever your problem, we're here to help! We will solve any kind of "trouble" you may have!
@@ -40,3 +41,18 @@ Waiting for you are the ever-smiling poster-girl and the cool, serious newcomer.
 Whatever your order is, leave it all up to us♪
 
 [(Source: AniList)](https://anilist.co/anime/143270/Lycoris-Recoil)
+
+{% set tabLabels = ['Source', 'Resolution', 'Encoding', 'Bit Depth', 'Audio', ' Subtitle'] %}
+{% set vidUploaders = ['ASW (WEB)', 'Judas (WEB)'] %}
+{% set vidResolutions = ['1920 x 1080'] %}
+{% set vidEncodings = ['HEVC'] %}
+{% set vidBithDepths = ['10 bits'] %}
+{% set vidAudios = ['Japanese'] %}
+{% set vidSubtitles = ['English'] %}
+{% set downloadUrls = [
+    'https://drive.shiro39.tk/0:/Anime/Lycoris%20Recoil/[ASW]%20(WEB%20-%201080p%20-%20HEVC%20-%2010-bit%20-%20AAC)/',
+    'https://drive.shiro39.tk/0:/Anime/Lycoris%20Recoil/[Judas]%20(WEB%20-%201080p%20-%20HEVC%20-%2010-bit%20-%20AAC)/'
+] %}
+{% set airedEpisodes = 12 %}
+
+{% include "DownloadList.njk" %}
