@@ -1,10 +1,13 @@
 ---
 title: Lycoris Recoil
-date: 2022-09-28
+date: 2022-07-02
 categories:
     - Anime
     - Summer 2022
 tags:
+    - Action
+    - Comedy
+    - Slice of Life
     - Primarily Female Cast
     - Female Protagonist
     - Crime
