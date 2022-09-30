@@ -1,4 +1,4 @@
-<h2>Mediainfo</h2>
+<h2>MediaInfo</h2>
 
 <script>
     let tabLabels = [{% for item in tabLabels -%} '{{ item }}', {%- endfor %}];
@@ -10,6 +10,10 @@
     let vidSubtitles = [{% for item in vidSubtitles -%} '{{ item }}', {%- endfor %}];
 
     document.write(`
+        <div class="mdui-panel" mdui-panel>
+        <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">Click to expand</div>
+        <div class="mdui-panel-item-body">
         <div class="mdui-table-fluid">
         <table class="mdui-table">
         <thead>
@@ -80,6 +84,9 @@
         </tbody>
         </table>
         </div>
+        </div>
+        </div>
+        </div>
     `);
 </script>
 
@@ -90,8 +97,19 @@
     let downloadUrls = [{% for item in downloadUrls -%} '{{ item }}', {%- endfor %}];
     let airedEpisodes = {{ airedEpisodes }};
 
+    document.write(`
+        <div class="mdui-panel" mdui-panel>
+        <div class="mdui-panel-item">
+        <div class="mdui-panel-item-header">Click to expand</div>
+        <div class="mdui-panel-item-body">
+    `);
+
     uploaders.forEach((uploader, i) => {
         document.write(`
+            <div class="mdui-panel" mdui-panel="{accordion: true}">
+            <div class="mdui-panel-item">
+            <div class="mdui-panel-item-header">Click to expand</div>
+            <div class="mdui-panel-item-body">
             <div class="mdui-table-fluid">
             <table class="mdui-table">
             <thead>
@@ -118,6 +136,15 @@
             </tbody>
             </table>
             </div>
+            </div>
+            </div>
+            </div>
         `);
     })
+
+    document.write(`
+        </div>
+        </div>
+        </div>
+    `);
 </script>
