@@ -152,9 +152,11 @@ permalink: /posts/{{ title | slugify }}/index.html
                     {{ content | safe }}
                 </div>
             </div>
-            {# {% if comments.enable %}
-                {% include "comment_card.njk" %}
-            {% endif %} #}
+            <div class="mdui-card mdui-shadow-4 mdui-m-t-3">
+                <div class="mdui-card-content">
+                    {% include "Disqus.njk" %}
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
