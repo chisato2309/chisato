@@ -5,9 +5,10 @@
         </button>
         <div class="mdui-typo-headline">{{ title }}</div>
         <div class="mdui-toolbar-spacer"></div>
-        <button disabled class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
+        {# <button disabled class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white">
             <i class="mdui-icon material-icons">search</i>
-        </button>
+        </button> #}
+        {% include "TypeaheadSearch.njk" %}
     </div>
 </div>
 <div id="appbar-drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
